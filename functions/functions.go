@@ -25,7 +25,7 @@ func main() {
 	fmt.Println(result)
 
 	resultPointer := sumPointer(2, 3, 4, 5, 6)
-	// can return a pointer as variable is moved to heap after func data is garbage collected
+	// can return a pointer from function (!) as variable is moved to heap after func data is garbage collected
 	// deref pointer to get value
 	fmt.Println(*resultPointer)
 
@@ -94,7 +94,7 @@ func sayGreeting(greeting, name string) {
 	fmt.Println(greeting, name)
 }
 
-// using pointers a ref to the data is passed in
+// using pointers - a ref to the data is passed in
 // much more efficient as not copying
 func sayGreetingPointers(greeting, name *string) {
 	*name = "John"

@@ -6,6 +6,7 @@ import (
 
 func main() {
 	var a int = 42
+	// b is declared as a pointer to mem address of a
 	var b *int = &a
 	// use deref to reassign value
 	*b = 27

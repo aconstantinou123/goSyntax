@@ -30,6 +30,7 @@ func main() {
 	fmt.Println(g)
 
 	// make function
+	// can create slice with different length / capacity
 	h := make([]int, 3, 100)
 	fmt.Println(h)
 	fmt.Printf("Length: %v\n", len(h))

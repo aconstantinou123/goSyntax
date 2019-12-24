@@ -28,7 +28,7 @@ func main() {
 		},
 	}
 
-	// cant instantiate without using keys (not advised - hard to maintain )
+	// can instantiate without using keys (not advised - hard to maintain )
 	doctor2 := Doctor{
 		1,
 		"John Smith",

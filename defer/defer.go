@@ -9,7 +9,7 @@ import (
 
 func main() {
 	fmt.Println("start")
-	//function is called after mains final statement but before it returns
+	//function is called after the mains final statement but before it returns
 	// defer uses LIFO
 	defer fmt.Println("middle")
 	fmt.Println("end")
